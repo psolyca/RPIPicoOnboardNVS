@@ -23,6 +23,7 @@ using namespace std;
 
 //FreeRTOS Kernel Support
 #ifdef LIB_FREERTOS_KERNEL
+#define __FREERTOS 1
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"

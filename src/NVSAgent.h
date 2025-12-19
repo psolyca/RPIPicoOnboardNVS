@@ -14,6 +14,7 @@
 #ifndef SRC_NVSAGENT_H_
 #define SRC_NVSAGENT_H_
 
+#define __FREERTOS 1
 #include "FreeRTOS.h"
 #include "task.h"
 #include "pico/stdlib.h"
