@@ -12,14 +12,8 @@
 #include <cstring>
 #include "pico/stdlib.h"
 #include "hardware/flash.h"
-#if CPPUTEST_USE_NEW_MACROS
-   #undef new
-#endif
 #include <map>
 using namespace std;
-#if CPPUTEST_USE_NEW_MACROS
-   #include "CppUTest/MemoryLeakDetectorNewMacros.h"
-#endif
 
 //FreeRTOS Kernel Support
 #ifdef LIB_FREERTOS_KERNEL
