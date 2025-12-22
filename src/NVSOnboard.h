@@ -476,8 +476,8 @@ protected:
 	 */
 	uint32_t oat_hash(const char *s, size_t len);
 
-	map<string, nvs_entry_t *> xDirty;
-	map<string, nvs_entry_t *> xClean;
+	std::map<string, nvs_entry_t *> xDirty;
+	std::map<string, nvs_entry_t *> xClean;
 
 #ifdef LIB_FREERTOS_KERNEL
 	SemaphoreHandle_t xWriteSemaphore = NULL;
