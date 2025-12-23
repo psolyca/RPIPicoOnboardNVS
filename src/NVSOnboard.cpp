@@ -584,7 +584,7 @@ void NVSOnboard::init(){
     xDirty.clear();
     xClean.clear();
 
-    //printf("Loading header %u, %u, %u\n", header->count, header->pages, header->hash);
+    printf("Loading header %u, %u, %u\n", header->count, header->pages, header->hash);
     if (header->pages > NVS_SIZE ){
     	printf("ERROR NVS is corrupt\n");
     	return;
